@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"time"
 
+	sensibo "github.com/futurehomeno/edge-sensibo-adapter/sensibo-api"
 	"github.com/futurehomeno/fimpgo/edgeapp"
 	"github.com/futurehomeno/fimpgo/utils"
 	log "github.com/sirupsen/logrus"
-	sensibo "github.com/tskaard/sensibo/sensibo-api"
 )
 
 type State struct {

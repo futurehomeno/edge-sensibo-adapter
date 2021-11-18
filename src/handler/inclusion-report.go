@@ -3,10 +3,10 @@ package handler
 import (
 	"fmt"
 
+	sensibo "github.com/futurehomeno/edge-sensibo-adapter/sensibo-api"
 	"github.com/futurehomeno/fimpgo"
 	"github.com/futurehomeno/fimpgo/fimptype"
 	log "github.com/sirupsen/logrus"
-	sensibo "github.com/tskaard/sensibo/sensibo-api"
 )
 
 func buildInterface(iType string, msgType string, valueType string, version string) fimptype.Interface {

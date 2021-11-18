@@ -3,9 +3,9 @@ package handler
 import (
 	"strconv"
 
+	sensibo "github.com/futurehomeno/edge-sensibo-adapter/sensibo-api"
 	"github.com/futurehomeno/fimpgo"
 	log "github.com/sirupsen/logrus"
-	sensibo "github.com/tskaard/sensibo/sensibo-api"
 )
 
 func (fc *FimpSensiboHandler) sendTemperatureMsg(addr string, temp float64, oldMsg *fimpgo.FimpMessage, channel int) { // channel; 0 = ch_0, 1 = ch_1, -1 = no channel
