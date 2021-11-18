@@ -12,8 +12,8 @@ import (
 	scribble "github.com/nanobox-io/golang-scribble"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/tskaard/sensibo/model"
-	"github.com/tskaard/sensibo/sensibo-api"
+	"github.com/futurehomeno/edge-sensibo-adapter/model"
+	"github.com/futurehomeno/edge-sensibo-adapter/sensibo-api"
 )
 
 // FimpSensiboHandler structure

@@ -7,10 +7,10 @@ import (
 
 	"github.com/futurehomeno/fimpgo/edgeapp"
 
+	"github.com/futurehomeno/edge-sensibo-adapter/handler"
+	"github.com/futurehomeno/edge-sensibo-adapter/model"
 	"github.com/futurehomeno/fimpgo"
 	log "github.com/sirupsen/logrus"
-	"github.com/tskaard/sensibo/handler"
-	"github.com/tskaard/sensibo/model"
 	lumberjack "gopkg.in/natefinch/lumberjack.v2"
 )
 

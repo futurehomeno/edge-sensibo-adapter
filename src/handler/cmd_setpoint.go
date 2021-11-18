@@ -3,9 +3,9 @@ package handler
 import (
 	"strings"
 
+	sensibo "github.com/futurehomeno/edge-sensibo-adapter/sensibo-api"
 	"github.com/futurehomeno/fimpgo"
 	log "github.com/sirupsen/logrus"
-	sensibo "github.com/tskaard/sensibo/sensibo-api"
 )
 
 func (fc *FimpSensiboHandler) setpointGetReport(oldMsg *fimpgo.Message) {

@@ -5,7 +5,7 @@ import (
 	"math"
 	"strconv"
 
-	sensibo "github.com/tskaard/sensibo/sensibo-api"
+	sensibo "github.com/futurehomeno/edge-sensibo-adapter/sensibo-api"
 )
 
 // func checkSupportedFanMode(pod sensibo.Pod, mode string) bool {
