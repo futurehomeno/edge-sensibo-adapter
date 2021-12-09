@@ -311,22 +311,23 @@ func (fc *FimpSensiboHandler) routeFimpMessage(newMsg *fimpgo.Message) {
 			}
 		}
 		fanConfig := manifest.GetAppConfig("fan_ctrl")
-		modeConfig := manifest.GetAppConfig("mode")
 		fanConfig.Val.Default = fc.state.FanMode
-		modeConfig.Val.Default = fc.state.Mode
 
 		fanCtrlBlock := manifest.GetUIBlock("fan_ctrl")
-		modeBlock := manifest.GetUIBlock("mode")
+		syncBlock := manifest.GetUIBlock("sync")
+		loginBlock := manifest.GetUIBlock("login")
 		syncButton := manifest.GetButton("sync")
 
 		if fc.appLifecycle.ConnectionState() == edgeapp.ConnStateConnected {
 			fanCtrlBlock.Hidden = false
-			modeBlock.Hidden = false
+			syncBlock.Hidden = false
 			syncButton.Hidden = false
+			loginBlock.Hidden = true
 		} else {
 			fanCtrlBlock.Hidden = true
-			modeBlock.Hidden = true
+			syncBlock.Hidden = true
 			syncButton.Hidden = true
+			loginBlock.Hidden = false
 		}
 
 		if fc.env == utils.EnvBeta {

@@ -7,7 +7,6 @@ sensibo
 VERSION
 control
 *.deb
-package/build
 
 # IDE
 .idea
