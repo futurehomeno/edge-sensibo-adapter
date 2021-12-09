@@ -16,17 +16,16 @@
       "config_point": "any"
     },
     {
-      "id": "mode",
-      "label": {"en": "Mode"},
+      "id": "login_txt",
+      "label": {"en": ""},
       "val_t": "string",
       "ui": {
-        "type": "list_radio",
-        "select": [{"val": "cool","label": {"en": "cool"}},{"val": "heat","label":{"en": "heat"}}, {"val": "auto","label": {"en": "auto"}}]
+        "type": "input_readonly"
       },
       "val": {
-        "default": ""
+        "default": "You need to login first"
       },
-      "is_required": true,
+      "is_required": false,
       "hidden":false,
       "config_point": "any"
     }
@@ -54,21 +53,21 @@
       "hidden":false
     },
     {
-      "id": "mode",
-      "header": {"en": "mode control"},
-      "text": {"en": ""},
-      "configs": ["mode"],
-      "buttons": [],
-      "footer": {"en": ""},
-      "hidden":false
-    },
-    {
       "id":"sync",
       "header": {"en": "Synchronize with Sensibo app"},
       "text": {"en": "The app will find and include all devices connected to your Sensibo user. You need to be logged in before synchronizing."},
       "configs": [],
       "buttons": ["sync"],
       "footer": {"en": ""}
+    },
+    {
+      "id":"login",
+      "header": {"en": ""},
+      "text": {"en": ""},
+      "configs": ["login_txt"],
+      "buttons": [],
+      "footer": {"en": ""},
+      "hidden": false
     }
   ],
   "auth": {
